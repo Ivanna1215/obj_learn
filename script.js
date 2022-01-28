@@ -243,21 +243,96 @@
 
 
 // Task 4
-let calculator = {
-    read (a,b) {
-console.log (a,b)
-    },
-    sum () {
-     return calculator.read.a + calculator.read.b;
-    },
-  };
-  
-  calculator.read(10,15);
-  console.log( calculator.sum() );
-//   console.log ( calculator.mul() );
 
-//   user = {
-    //      sayHi () {
-    // console.log ('Hello');
-    //      }
-    //  }
+// let calculator = {
+//     read (a,b) {
+// this.a = a;
+// this.b = b;
+// console.log (this.a,this.b)
+//     },
+//     sum () {
+//      return this.a + this.b
+//     },
+//     mul () {
+//       return this.a*this.b
+//     }
+//   };
+  
+//   calculator.read(10,15);
+//   console.log( calculator.sum() );
+//   console.log( calculator.mul() );
+
+// Task 5
+
+// let ladder = {
+//   step:0,
+//   up () {
+//     this.step++;
+//     return this;
+//   },
+//   down () {
+//     this.step--;
+//     return this;
+//   },
+//   showStep: function() {
+// console.log (this.step);
+//   }
+// }
+// ladder.up().up().down().showStep();
+
+const ivanna = {
+  name:'freeser',
+  guarantee: '14 day',
+  showInfo () {
+    console.log ('Samsung')
+  },
+}
+
+// console.log (ivanna);
+
+// for (let key in ivanna) {
+  // console.log (key,ivanna[key])
+// }
+// const anna = {};
+
+// for (let key in ivanna) {
+//   anna[key] = ivanna [key];
+// }
+// console.log (anna);
+
+// let wardrobe ={};
+// function isEmpty(obj) {
+//   for (let key in obj) {
+//     return false;
+//   }
+//   return true;
+// }
+// console.log (isEmpty())
+
+
+// function isEmpty(obj) {
+//   for (let key in obj) {
+//     // если тело цикла начнет выполняться - значит в объекте есть свойства
+//     return false;
+//   }
+//   return true;
+// }
+// isEmpty(ivanna);
+
+
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu"
+// };
+
+// function multiplyNumeric(obj) {
+//   for (let key in menu) {
+//     if (typeof menu[key] === 'number' ) {
+//       menu[key]*=2;
+//     }
+//   }
+//   console.log (menu);
+// }
+
+// multiplyNumeric (menu);

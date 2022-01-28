@@ -217,12 +217,47 @@
 
 // !!!!!!!!! TASK 2 !!!!!!!
 
-let obj,method;
-obj = {
-    go: function () { console.log (this);}
-}
-obj.go ();
-(obj.go) ();
+// let obj,method;
+// obj = {
+//     go: function () { console.log (this);}
+// }
+// obj.go ();
+// (obj.go) ();
+
+// f = obj.go;
+// f();
 
 
+// !!!!!!!!! TASK 3 !!!!!!!
 
+// function makeUser () {
+//     return {
+//         name: 'Anna',
+//         ref () {
+//              return this;
+//     }
+// };
+// };
+// let user = makeUser ();
+// console.log(user.ref().name);
+
+
+// Task 4
+let calculator = {
+    read (a,b) {
+console.log (a,b)
+    },
+    sum () {
+     return calculator.read.a + calculator.read.b;
+    },
+  };
+  
+  calculator.read(10,15);
+  console.log( calculator.sum() );
+//   console.log ( calculator.mul() );
+
+//   user = {
+    //      sayHi () {
+    // console.log ('Hello');
+    //      }
+    //  }

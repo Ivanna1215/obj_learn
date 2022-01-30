@@ -280,13 +280,13 @@
 // }
 // ladder.up().up().down().showStep();
 
-const ivanna = {
-  name:'freeser',
-  guarantee: '14 day',
-  showInfo () {
-    console.log ('Samsung')
-  },
-}
+// const ivanna = {
+//   name:'freeser',
+//   guarantee: '14 day',
+//   showInfo () {
+//     console.log ('Samsung')
+//   },
+// }
 
 // console.log (ivanna);
 
@@ -336,3 +336,38 @@ const ivanna = {
 // }
 
 // multiplyNumeric (menu);
+
+// Конструктори,створення об'єктів через 'new'
+
+// Функції конструктори є стандартними функціями 
+// але є дві умови:
+// 1. Ім'я функції має починатися з великої літери.
+// 2. Функція -конструктор повинна викликатись за допомогою оператора 'new'
+
+// function User(name) {
+//   this.name = name;
+//   this.isAdmin = false;
+// }
+
+// let user = new User ('Anna');
+// console.log (user.name);
+
+
+
+  function Calculator() {
+      this.read = function (a,b) {
+  this.a = a;
+  this.b = b;
+  console.log (this.a,this.b)
+      },
+      this.sum = function () {
+       return +this.a + +this.b
+      },
+      this.mul = function () {
+        return this.a*this.b
+      }
+    };
+    
+let  calculator = new Calculator ();
+calculator.read (10,2);
+calculator.sum ();
